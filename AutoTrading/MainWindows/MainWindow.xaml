@@ -18,13 +18,11 @@
         </Grid.RowDefinitions>
         <!--title-->
         <Grid Grid.Row="0">
-            <StackPanel Margin="1">
-                <Image Source="images/TitleImage.jpg"/>
-            </StackPanel>
+            
         </Grid>
         <!--키움증권 OpenAPI-->
         <Grid Grid.Row="1">
-            <Button x:Name="btnKiwoomConnect" Margin="20,5,20,5" Background="#262775" Click="btnKiwoomConnect_Click">
+            <Button Margin="20,5,20,5" Background="#262775">
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
                     <Image Source="images/kiwoomLogo.png" Width="30" Height="30" HorizontalAlignment="Left" Margin="0,0,10,0"/>
                     <TextBlock Text="키움증권 OpenAPI 로그인" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="15" FontWeight="Heavy" Foreground="White"/>

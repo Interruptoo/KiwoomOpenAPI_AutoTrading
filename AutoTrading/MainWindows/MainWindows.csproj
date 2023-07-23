@@ -104,7 +104,7 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\kiwoomLogo.png" />
-    <Resource Include="images\TitleImage.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
