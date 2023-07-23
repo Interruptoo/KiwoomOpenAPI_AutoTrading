@@ -34,6 +34,11 @@ namespace MainWindows
         private void btnKiwoomConnect_Click(object sender, RoutedEventArgs e)
         {
             KhCtrlApi.Login();
+
+            if(KhCtrlApi.IsConnected == true)
+            {
+
+            }
         }
     }
 }
