@@ -28,6 +28,11 @@ namespace MainWindows
 
         private void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
+            
+        }
+
+        private void btnKiwoomConnect_Click(object sender, RoutedEventArgs e)
+        {
             KhCtrlApi.Login();
         }
     }

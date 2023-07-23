@@ -6,10 +6,35 @@
         xmlns:local="clr-namespace:MainWindows"
         xmlns:khctrl ="clr-namespace:WF_KiwoomLoginControl;assembly=WF_KiwoomLoginControl"
         mc:Ignorable="d"        
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="400" Width="300">
     <Grid>
-        <WindowsFormsHost Visibility="Collapsed">
-            <khctrl:KHCtrl x:Name="KhCtrlApi"></khctrl:KHCtrl>
-        </WindowsFormsHost>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/> <!--Title-->
+            <RowDefinition Height="*" /> <!--키움증권 OpenAPI-->
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <!--title-->
+        <Grid Grid.Row="0">
+            <StackPanel Margin="1">
+                <Image Source="images/TitleImage.jpg"/>
+            </StackPanel>
+        </Grid>
+        <!--키움증권 OpenAPI-->
+        <Grid Grid.Row="1">
+            <Button x:Name="btnKiwoomConnect" Margin="20,5,20,5" Background="#262775" Click="btnKiwoomConnect_Click">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+                    <Image Source="images/kiwoomLogo.png" Width="30" Height="30" HorizontalAlignment="Left" Margin="0,0,10,0"/>
+                    <TextBlock Text="키움증권 OpenAPI 로그인" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="15" FontWeight="Heavy" Foreground="White"/>
+                </StackPanel>
+            </Button>
+            <!--키움증권 Login 컨트롤-->
+            <WindowsFormsHost Visibility="Collapsed">
+                <khctrl:KHCtrl x:Name="KhCtrlApi"></khctrl:KHCtrl>
+            </WindowsFormsHost>
+        </Grid>
+                
     </Grid>
 </Window>
