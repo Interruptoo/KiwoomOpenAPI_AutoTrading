@@ -27,3 +27,5 @@ C:\Users\dbals\Desktop\개발\Trading\KiwoomOpenAPI_AutoTrading\AutoTrading\WF_K
 C:\Users\dbals\Desktop\개발\Trading\KiwoomOpenAPI_AutoTrading\AutoTrading\WF_KiwoomLoginControl\obj\Debug\WF_KiwoomLoginControl.csproj.CoreCompileInputs.cache
 C:\Users\dbals\Desktop\개발\Trading\KiwoomOpenAPI_AutoTrading\AutoTrading\WF_KiwoomLoginControl\obj\Debug\WF_KiwoomLoginControl.exe
 C:\Users\dbals\Desktop\개발\Trading\KiwoomOpenAPI_AutoTrading\AutoTrading\WF_KiwoomLoginControl\obj\Debug\WF_KiwoomLoginControl.pdb
+C:\Users\dbals\Desktop\개발\Trading\AutoTrading\WF_KiwoomLoginControl\obj\Debug\WF_KiwoomLoginControl.csproj.AssemblyReference.cache
+C:\Users\dbals\Desktop\개발\Trading\AutoTrading\WF_KiwoomLoginControl\obj\Debug\WF_KiwoomLoginControl.csproj.SuggestedBindingRedirects.cache
