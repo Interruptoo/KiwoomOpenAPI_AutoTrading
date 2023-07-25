@@ -6,10 +6,11 @@
         xmlns:local="clr-namespace:MainWindows"
         xmlns:khctrl ="clr-namespace:WF_KiwoomLoginControl;assembly=WF_KiwoomLoginControl"
         mc:Ignorable="d"        
-        Title="MainWindow" Height="400" Width="300">
+        Title="MainWindow" Height="400" Width="300" Background="#FF171922">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"/> <!--Title-->
+            <RowDefinition Height="5"/>
             <RowDefinition Height="*" /> <!--키움증권 OpenAPI-->
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
@@ -22,8 +23,11 @@
                 <Image Source="images/TitleImage.jpg"/>
             </StackPanel>
         </Grid>
+        <Separator Grid.Row="1" BorderBrush="White" BorderThickness="1" VerticalAlignment="Top">
+            
+        </Separator>
         <!--키움증권 OpenAPI-->
-        <Grid Grid.Row="1">
+        <Grid Grid.Row="2">
             <Button x:Name="btnKiwoomConnect" Margin="20,5,20,5" Background="#262775" Click="btnKiwoomConnect_Click">
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
                     <Image Source="images/kiwoomLogo.png" Width="30" Height="30" HorizontalAlignment="Left" Margin="0,0,10,0"/>
