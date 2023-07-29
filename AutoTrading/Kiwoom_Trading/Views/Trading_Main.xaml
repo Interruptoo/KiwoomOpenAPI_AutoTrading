@@ -1,0 +1,22 @@
+﻿<Window x:Class="Kiwoom_Trading.Views.Trading_Main"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kiwoom_Trading.Views"
+        mc:Ignorable="d"
+        Title="키움매매_Main" Height="700" Width="1400" Background="#FF171922">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.05*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Menu Background="#FF171922">
+                <MenuItem Header="설정" Foreground="White" Margin="5" BorderThickness="1" >
+                    <MenuItem Header="Test01" Foreground="Black"/>
+                </MenuItem>
+            </Menu>
+        </Grid>
+    </Grid>
+</Window>

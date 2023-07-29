@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Kiwoom_Trading.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -37,8 +38,15 @@ namespace MainWindows
 
             if(KhCtrlApi.IsConnected == true)
             {
-
+                Trading_Main pop = new Trading_Main();
+                pop.Show();
             }
+        }
+
+        private void popuptest_click(object sender, RoutedEventArgs e)
+        {
+            Trading_Main pop = new Trading_Main();
+            pop.Show();
         }
     }
 }

@@ -1,0 +1,16 @@
+C:\Users\dbals\Desktop\개발\Trading\AutoTrading\Kiwoom_Trading\bin\Debug\Kiwoom_Trading.exe.config
+C:\Users\dbals\Desktop\개발\Trading\AutoTrading\Kiwoom_Trading\bin\Debug\Kiwoom_Trading.exe
+C:\Users\dbals\Desktop\개발\Trading\AutoTrading\Kiwoom_Trading\bin\Debug\Kiwoom_Trading.pdb
+C:\Users\dbals\Desktop\개발\Trading\AutoTrading\Kiwoom_Trading\obj\Debug\Kiwoom_Trading.csproj.AssemblyReference.cache
+C:\Users\dbals\Desktop\개발\Trading\AutoTrading\Kiwoom_Trading\obj\Debug\Kiwoom_Trading.csproj.SuggestedBindingRedirects.cache
+C:\Users\dbals\Desktop\개발\Trading\AutoTrading\Kiwoom_Trading\obj\Debug\Views\Trading_Main.g.cs
+C:\Users\dbals\Desktop\개발\Trading\AutoTrading\Kiwoom_Trading\obj\Debug\App.g.cs
+C:\Users\dbals\Desktop\개발\Trading\AutoTrading\Kiwoom_Trading\obj\Debug\Kiwoom_Trading_MarkupCompile.cache
+C:\Users\dbals\Desktop\개발\Trading\AutoTrading\Kiwoom_Trading\obj\Debug\Kiwoom_Trading_MarkupCompile.lref
+C:\Users\dbals\Desktop\개발\Trading\AutoTrading\Kiwoom_Trading\obj\Debug\Views\Trading_Main.baml
+C:\Users\dbals\Desktop\개발\Trading\AutoTrading\Kiwoom_Trading\obj\Debug\Kiwoom_Trading.g.resources
+C:\Users\dbals\Desktop\개발\Trading\AutoTrading\Kiwoom_Trading\obj\Debug\Kiwoom_Trading.Properties.Resources.resources
+C:\Users\dbals\Desktop\개발\Trading\AutoTrading\Kiwoom_Trading\obj\Debug\Kiwoom_Trading.csproj.GenerateResource.cache
+C:\Users\dbals\Desktop\개발\Trading\AutoTrading\Kiwoom_Trading\obj\Debug\Kiwoom_Trading.csproj.CoreCompileInputs.cache
+C:\Users\dbals\Desktop\개발\Trading\AutoTrading\Kiwoom_Trading\obj\Debug\Kiwoom_Trading.exe
+C:\Users\dbals\Desktop\개발\Trading\AutoTrading\Kiwoom_Trading\obj\Debug\Kiwoom_Trading.pdb

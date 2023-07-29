@@ -97,6 +97,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Kiwoom_Trading\Kiwoom_Trading.csproj">
+      <Project>{34e59930-bdf0-41f4-a267-d7c0ce3f2927}</Project>
+      <Name>Kiwoom_Trading</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WF_KiwoomLoginControl\WF_KiwoomLoginControl.csproj">
       <Project>{a2702061-8fd6-4dea-aa12-6c92223f9a9f}</Project>
       <Name>WF_KiwoomLoginControl</Name>

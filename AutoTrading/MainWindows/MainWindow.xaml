@@ -39,6 +39,10 @@
                 <khctrl:KHCtrl x:Name="KhCtrlApi"></khctrl:KHCtrl>
             </WindowsFormsHost>
         </Grid>
+
+        <Button Grid.Row="3" Margin="20,5,20,5" Content="팝업테스트 버튼" Click="popuptest_click">
+            
+        </Button>
                 
     </Grid>
 </Window>

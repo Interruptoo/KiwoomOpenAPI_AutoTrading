@@ -41,3 +41,6 @@ C:\Users\dbals\Desktop\개발\Trading\KiwoomOpenAPI_AutoTrading\AutoTrading\Main
 C:\Users\dbals\Desktop\개발\Trading\KiwoomOpenAPI_AutoTrading\AutoTrading\MainWindows\obj\Debug\MainWindows.exe
 C:\Users\dbals\Desktop\개발\Trading\KiwoomOpenAPI_AutoTrading\AutoTrading\MainWindows\obj\Debug\MainWindows.pdb
 C:\Users\dbals\Desktop\개발\Trading\AutoTrading\MainWindows\obj\Debug\MainWindows.csproj.SuggestedBindingRedirects.cache
+C:\Users\dbals\Desktop\개발\Trading\AutoTrading\MainWindows\bin\Debug\Kiwoom_Trading.exe
+C:\Users\dbals\Desktop\개발\Trading\AutoTrading\MainWindows\bin\Debug\Kiwoom_Trading.pdb
+C:\Users\dbals\Desktop\개발\Trading\AutoTrading\MainWindows\bin\Debug\Kiwoom_Trading.exe.config
