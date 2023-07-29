@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Kiwoom_Trading.Models;
+using Kiwoom_Trading.ViewModels;
 
 namespace Kiwoom_Trading.Views
 {
@@ -22,6 +24,7 @@ namespace Kiwoom_Trading.Views
         public Trading_Main()
         {
             InitializeComponent();
-        }
+        }        
+        
     }
 }

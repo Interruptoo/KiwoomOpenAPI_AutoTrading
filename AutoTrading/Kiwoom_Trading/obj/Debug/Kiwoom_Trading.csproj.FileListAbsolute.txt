@@ -14,3 +14,10 @@ C:\Users\dbals\Desktop\개발\Trading\AutoTrading\Kiwoom_Trading\obj\Debug\Kiwoo
 C:\Users\dbals\Desktop\개발\Trading\AutoTrading\Kiwoom_Trading\obj\Debug\Kiwoom_Trading.csproj.CoreCompileInputs.cache
 C:\Users\dbals\Desktop\개발\Trading\AutoTrading\Kiwoom_Trading\obj\Debug\Kiwoom_Trading.exe
 C:\Users\dbals\Desktop\개발\Trading\AutoTrading\Kiwoom_Trading\obj\Debug\Kiwoom_Trading.pdb
+C:\Users\dbals\Desktop\개발\Trading\AutoTrading\Kiwoom_Trading\bin\Debug\WF_KiwoomLoginControl.exe
+C:\Users\dbals\Desktop\개발\Trading\AutoTrading\Kiwoom_Trading\bin\Debug\AxInterop.KHOpenAPILib.dll
+C:\Users\dbals\Desktop\개발\Trading\AutoTrading\Kiwoom_Trading\bin\Debug\Interop.KHOpenAPILib.dll
+C:\Users\dbals\Desktop\개발\Trading\AutoTrading\Kiwoom_Trading\bin\Debug\WF_KiwoomLoginControl.pdb
+C:\Users\dbals\Desktop\개발\Trading\AutoTrading\Kiwoom_Trading\bin\Debug\WF_KiwoomLoginControl.exe.config
+C:\Users\dbals\Desktop\개발\Trading\AutoTrading\Kiwoom_Trading\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\dbals\Desktop\개발\Trading\AutoTrading\Kiwoom_Trading\obj\Debug\Kiwoom_Trading.csproj.CopyComplete

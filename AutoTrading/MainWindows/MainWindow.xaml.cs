@@ -1,4 +1,6 @@
 ﻿using Kiwoom_Trading.Views;
+using Kiwoom_Trading.Models;
+using Kiwoom_Trading.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,7 +39,7 @@ namespace MainWindows
             KhCtrlApi.Login();
 
             if(KhCtrlApi.IsConnected == true)
-            {
+            {                                
                 Trading_Main pop = new Trading_Main();
                 pop.Show();
             }

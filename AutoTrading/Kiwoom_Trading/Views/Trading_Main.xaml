@@ -4,19 +4,115 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Kiwoom_Trading.Views"
+        xmlns:ViewModel="clr-namespace:Kiwoom_Trading.ViewModels"
         mc:Ignorable="d"
-        Title="키움매매_Main" Height="700" Width="1400" Background="#FF171922">
+        Title="키움매매_Main" Height="700" Width="1400" Background="#FF171922" >
+
+    <Window.DataContext>
+        <ViewModel:Trading_Main_ViewModels />
+    </Window.DataContext>
+
+    <Window.Resources>
+        <Style TargetType="{x:Type TextBlock}" x:Key="InfoText">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="10,0,0,0"/>
+        </Style>
+    </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="0.05*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
+        <!--메뉴바-->
         <Grid Grid.Row="0">
             <Menu Background="#FF171922">
-                <MenuItem Header="설정" Foreground="White" Margin="5" BorderThickness="1" >
-                    <MenuItem Header="Test01" Foreground="Black"/>
+                <MenuItem Header="파일" Foreground="White" Margin="5" BorderThickness="1" >
+                    <MenuItem Header="설정" Foreground="Black"/>
                 </MenuItem>
             </Menu>
         </Grid>
+        <!--화면단-->
+        <Border Grid.Row="1" BorderBrush="Wheat" BorderThickness="1" Margin="5">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="3" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0.5*"/> <!--userinfo-->
+                        <RowDefinition Height="*"/> 
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <!--userinfo-->
+                    <Border Grid.Row="0" BorderBrush="Beige" BorderThickness="1" Margin="10">
+                        <Grid Grid.Row="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.5*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="0.5*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <TextBlock Grid.Row="0" Grid.Column="0" Text="사용자ID" Style="{StaticResource InfoText}"/>
+                            <TextBox Grid.Row="0" Grid.Column="1" MinWidth="200" MinHeight="25" HorizontalAlignment="Center" VerticalAlignment="Center" IsReadOnly="True"/>
+                            <TextBlock Grid.Row="0" Grid.Column="2" Text="사용자명" Style="{StaticResource InfoText}"/>
+                            <TextBox Grid.Row="0" Grid.Column="4" MinWidth="200" MinHeight="25" HorizontalAlignment="Center" VerticalAlignment="Center" IsReadOnly="True"/>
+                            <TextBlock Grid.Row="1" Grid.Column="0" Text="계좌선택" Style="{StaticResource InfoText}"/>
+                            <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal">
+                                <ComboBox MinWidth="150" MinHeight="25" HorizontalAlignment="Center" VerticalAlignment="Center" ItemsSource="{Binding Model.accountList}"/>
+                                <TextBox MinWidth="50" MinHeight="25" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"/>
+                            </StackPanel>
+                            <TextBlock Grid.Row="1" Grid.Column="2" Text="서버" Style="{StaticResource InfoText}"/>
+                            <TextBox Grid.Row="1" Grid.Column="4" MinWidth="200" MinHeight="25" HorizontalAlignment="Center" VerticalAlignment="Center" IsReadOnly="True"/>
+                        </Grid>
+                    </Border>
+                    <Border Grid.Row="1" BorderBrush="Beige" BorderThickness="1" Margin="10">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.5*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="0.5*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="0.5*"/>
+                                <RowDefinition Height="0.5*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <TextBlock Grid.Row="0" Grid.Column="0" Text="예수금" Style="{StaticResource InfoText}"/>
+                            <TextBox Grid.Row="0" Grid.Column="1" MinWidth="200" MinHeight="25" HorizontalAlignment="Center" VerticalAlignment="Center" IsReadOnly="True"/>
+                        </Grid>
+                    </Border>
+                </Grid>
+                <!--seperator-->
+                <Grid Grid.Column="1">
+                    <Separator HorizontalAlignment="Center" BorderBrush="White" BorderThickness="1" Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}" Margin="0,0,0,2"/>
+                </Grid>
+                <!--TextBox-->
+                <Grid Grid.Column="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <DockPanel LastChildFill="False">
+                        <Button Content="Clear" DockPanel.Dock="Right" Margin="0,0,5,0">
+
+                        </Button>
+                    </DockPanel>
+                    <RichTextBox Grid.Row="1" Margin="5" IsReadOnly="True">
+                        
+                    </RichTextBox>
+                </Grid>
+            </Grid>
+        </Border>
+
     </Grid>
 </Window>
