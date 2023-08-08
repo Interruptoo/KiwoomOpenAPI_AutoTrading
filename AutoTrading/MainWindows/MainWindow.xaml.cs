@@ -16,6 +16,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace MainWindows
 {
     /// <summary>
@@ -23,6 +24,11 @@ namespace MainWindows
     /// </summary>
     public partial class MainWindow : Window
     {
+        #region [Model Property]
+        public WF_KiwoomLoginControl.KHCtrl khCtrlApiClass = new WF_KiwoomLoginControl.KHCtrl();
+        Trading_Main_Models userInfo = new Trading_Main_Models();
+        #endregion [Model Property]
+
         public MainWindow()
         {
             InitializeComponent();
@@ -36,18 +42,31 @@ namespace MainWindows
 
         private void btnKiwoomConnect_Click(object sender, RoutedEventArgs e)
         {
-            KhCtrlApi.Login();
+            //KhCtrlApi.Login();
+            khCtrlApiClass.Login();
 
-            if(KhCtrlApi.IsConnected == true)
-            {                                
-                Trading_Main pop = new Trading_Main();
+            if (KhCtrlApi.IsConnected == true)
+            {
+                userInfo._accountListToString = khCtrlApiClass.userModel.Acclist;
+                userInfo._serverGubn = khCtrlApiClass.userModel.Getservergubun;
+                userInfo._userID = khCtrlApiClass.userModel.UserID;
+                userInfo._userName = khCtrlApiClass.userModel.UserName;
+
+
+                Trading_Main pop = new Trading_Main(userInfo);
                 pop.Show();
             }
         }
 
         private void popuptest_click(object sender, RoutedEventArgs e)
         {
-            Trading_Main pop = new Trading_Main();
+            userInfo._accountListToString = "123123123123;321321321321";
+            userInfo._userName = "유민호";
+            userInfo._userID = "ypu1312";
+            userInfo._serverGubn = "0";
+
+
+            Trading_Main pop = new Trading_Main(userInfo);
             pop.Show();
         }
     }

@@ -3,16 +3,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Kiwoom_Trading.Bases;
 using Kiwoom_Trading.Models;
 using Kiwoom_Trading.Views;
+using WF_KiwoomLoginControl;
 
 namespace Kiwoom_Trading.ViewModels
 {
-    public class Trading_Main_ViewModels
+    public class Trading_Main_ViewModels : ViewModelBase
     {
         #region [Consts]
 
         #endregion [Consts]
+
+        #region [Property]
+        public Trading_Main_Models inputOtherScreen = new Trading_Main_Models();
+        //public Trading_Main_Models userInfo;
+        private Trading_Main_Models userInfo;
+        public Trading_Main_Models _userInfo
+        {
+            get { return userInfo; }
+            set { userInfo = value; }
+        }
+        #endregion [Property]
 
         #region [Constructor]
         public Trading_Main_ViewModels()
@@ -20,17 +33,13 @@ namespace Kiwoom_Trading.ViewModels
             
         }
 
-        public Trading_Main_ViewModels(Trading_Main_Models obj)
+        public Trading_Main_ViewModels(object obj)
         {
+            inputOtherScreen = obj as Trading_Main_Models;
             //초기화
             this.Init();
         }
-        #endregion [Constructor]
-
-        #region [Model Property]
-        public Trading_Main_Models Model = new Trading_Main_Models();
-        public WF_KiwoomLoginControl.KiwwomUserModel userObject = new WF_KiwoomLoginControl.KiwwomUserModel();
-        #endregion [Model Propery]        
+        #endregion [Constructor]        
 
         #region [Command]
 
@@ -46,7 +55,11 @@ namespace Kiwoom_Trading.ViewModels
         /// </summary>
         private void Init()
         {
-            Model.accountList = userObject.Acclist.Split(';');
+            _userInfo = new Trading_Main_Models();
+            _userInfo._accountList = inputOtherScreen._accountListToString.Split(';');
+            _userInfo._serverGubn = inputOtherScreen._serverGubn;
+            _userInfo._userID = inputOtherScreen._userID;
+            _userInfo._userName = inputOtherScreen._userName;
         }
         #endregion [Method]
     }

@@ -106,7 +106,7 @@ namespace WF_KiwoomLoginControl
             axKHOpenAPI.SetInputValue("비밀번호입력매체구분", "00");
             axKHOpenAPI.SetInputValue("조회구분", "2"); //2:일반조회, 3:추정조회
 
-            result = axKHOpenAPI.CommRqData("예수금상세현황", "OPW00001", 0, "0362");   //param1 : request_name, param2 : TR Code(OPW00001 = 예수금상세현황요청)
+            result = axKHOpenAPI.CommRqData("예수금상세현황", "OPW00001", 0, "0");   //param1 : request_name, param2 : TR Code(OPW00001 = 예수금상세현황요청)
 
         }
 

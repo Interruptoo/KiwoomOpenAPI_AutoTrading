@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Kiwoom_Trading.Models;
 using Kiwoom_Trading.ViewModels;
+using WF_KiwoomLoginControl;
 
 namespace Kiwoom_Trading.Views
 {
@@ -24,7 +25,13 @@ namespace Kiwoom_Trading.Views
         public Trading_Main()
         {
             InitializeComponent();
-        }        
+        }
+
+        public Trading_Main(object obj)
+        {
+            InitializeComponent();            
+            this.DataContext = new Trading_Main_ViewModels(obj);            
+        }
         
     }
 }

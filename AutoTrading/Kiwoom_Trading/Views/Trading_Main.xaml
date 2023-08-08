@@ -8,9 +8,9 @@
         mc:Ignorable="d"
         Title="키움매매_Main" Height="700" Width="1400" Background="#FF171922" >
 
-    <Window.DataContext>
+    <!--<Window.DataContext>
         <ViewModel:Trading_Main_ViewModels />
-    </Window.DataContext>
+    </Window.DataContext>-->
 
     <Window.Resources>
         <Style TargetType="{x:Type TextBlock}" x:Key="InfoText">
@@ -62,16 +62,16 @@
                                 <RowDefinition Height="*"/>
                             </Grid.RowDefinitions>
                             <TextBlock Grid.Row="0" Grid.Column="0" Text="사용자ID" Style="{StaticResource InfoText}"/>
-                            <TextBox Grid.Row="0" Grid.Column="1" MinWidth="200" MinHeight="25" HorizontalAlignment="Center" VerticalAlignment="Center" IsReadOnly="True"/>
+                            <TextBox Grid.Row="0" Grid.Column="1" MinWidth="200" MinHeight="25" HorizontalAlignment="Center" VerticalAlignment="Center" IsReadOnly="True" Text="{Binding _userInfo._userID, UpdateSourceTrigger=PropertyChanged}"/>
                             <TextBlock Grid.Row="0" Grid.Column="2" Text="사용자명" Style="{StaticResource InfoText}"/>
-                            <TextBox Grid.Row="0" Grid.Column="4" MinWidth="200" MinHeight="25" HorizontalAlignment="Center" VerticalAlignment="Center" IsReadOnly="True"/>
+                            <TextBox Grid.Row="0" Grid.Column="4" MinWidth="200" MinHeight="25" HorizontalAlignment="Center" VerticalAlignment="Center" IsReadOnly="True" Text="{Binding _userInfo._userName, UpdateSourceTrigger=PropertyChanged}"/>
                             <TextBlock Grid.Row="1" Grid.Column="0" Text="계좌선택" Style="{StaticResource InfoText}"/>
                             <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal">
-                                <ComboBox MinWidth="150" MinHeight="25" HorizontalAlignment="Center" VerticalAlignment="Center" ItemsSource="{Binding Model.accountList}"/>
-                                <TextBox MinWidth="50" MinHeight="25" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"/>
+                                <ComboBox MinWidth="150" MinHeight="25" HorizontalAlignment="Center" VerticalAlignment="Center" ItemsSource="{Binding _userInfo._accountList, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
+                                <TextBox MinWidth="50" MinHeight="25" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5" Text="{Binding _userInfo._addAccountNO, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
                             </StackPanel>
                             <TextBlock Grid.Row="1" Grid.Column="2" Text="서버" Style="{StaticResource InfoText}"/>
-                            <TextBox Grid.Row="1" Grid.Column="4" MinWidth="200" MinHeight="25" HorizontalAlignment="Center" VerticalAlignment="Center" IsReadOnly="True"/>
+                            <TextBox Grid.Row="1" Grid.Column="4" MinWidth="200" MinHeight="25" HorizontalAlignment="Center" VerticalAlignment="Center" IsReadOnly="True" Text="{Binding _userInfo._serverGubn, UpdateSourceTrigger=PropertyChanged}"/>
                         </Grid>
                     </Border>
                     <Border Grid.Row="1" BorderBrush="Beige" BorderThickness="1" Margin="10">
@@ -103,6 +103,14 @@
                         <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
                     <DockPanel LastChildFill="False">
+                        <Button Content="시작" DockPanel.Dock="Left" Margin="5,0,5,0" Command="{Binding startButton_Click}">
+
+                        </Button>
+
+                        <Button Content="중지" DockPanel.Dock="Left" Margin="0,0,5,0" Command="{Binding stopButton_Click}">
+
+                        </Button>
+
                         <Button Content="Clear" DockPanel.Dock="Right" Margin="0,0,5,0">
 
                         </Button>
